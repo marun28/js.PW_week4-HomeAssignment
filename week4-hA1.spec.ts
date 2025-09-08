@@ -11,6 +11,7 @@ console.log(type)
 //alert box what message it has 
 console.log(alertType.message())
 //handle alert 
+//alertType.accept()
 alertType.dismiss()
 
 })
@@ -20,3 +21,4 @@ await page.frameLocator("//iframe[@id='iframeResult']").locator("//button[text()
 const mess = await page.frameLocator("//iframe[@id='iframeResult']").locator(`//p[@id='demo']`).innerText()
 console.log(mess)
 })
+
